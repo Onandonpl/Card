@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/*.html",
+    "build": "parcel build src/*.html -d public --public-url ./",
     "deploy": "npm run build && gh-pages -d dist",
     "branch": "git branch -M main ",
     "push": "git push -u origin main"
