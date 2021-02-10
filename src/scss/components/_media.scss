@@ -1,0 +1,21 @@
+.media {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    @media (max-width: 500px) {
+      justify-content: center;
+    }
+  }
+
+  &__link {
+    outline: none;
+
+
+    &:focus .icon {
+      transition: all 0s cubic-bezier(0.645, 0.045, 0.355, 1);
+      stroke: #debbaf;
+    }
+  }
+}
